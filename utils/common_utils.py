@@ -1,6 +1,6 @@
 from airtest.core.android.adb import ADB
 from airtest.core.api import *
-from utils.log_base import log_base_run
+# from utils.log_base import log_base_run
 from airtest.report.report import simple_report
 import logging
 adb = ADB()
@@ -40,7 +40,7 @@ def common_utils_report(path):
     """
     生成报告
     """
-    simple_report(__file__, logpath=f'{path}', logfile=f'{log_run}/log.txt', output=f'{log_run}/log.html')
+    simple_report(__file__, logpath=f'{path}', logfile=f'{path}/log.txt', output=f'{path}/log.html')
     return
 
 

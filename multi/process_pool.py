@@ -29,6 +29,7 @@ def multi_main():
     list = common_utils_serial()
     for i in list:
         po.apply_async(multi_process, (i,))
+        sleep(2)
     po.close()
     po.join()
 
